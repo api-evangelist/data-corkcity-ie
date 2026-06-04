@@ -1,0 +1,58 @@
+aid: data-corkcity-ie
+name: Cork City Open Data
+description: >-
+  Cork City Open Data is a municipal government open-data portal for Ireland running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 32 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/data-corkcity-ie/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Municipal Government
+  - Ireland
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: data-corkcity-ie:catalog
+    name: Cork City Open Data CKAN Action API
+    description: >-
+      CKAN Action API for Cork City Open Data, a consistent JSON-over-HTTP interface over a catalog of 32 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://data.corkcity.ie/api/3/action/.
+    humanURL: https://data.corkcity.ie
+    baseURL: https://data.corkcity.ie/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://data.corkcity.ie
+      - type: x-api-endpoint
+        url: https://data.corkcity.ie/api/3/action/status_show
+common:
+  - type: Website
+    url: https://data.corkcity.ie
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/data-corkcity-ie-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/data-corkcity-ie-rate-limits.yml
+  - type: FinOps
+    url: finops/data-corkcity-ie-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
